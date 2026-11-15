@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b0e">
+<title>SS AUTO EXPERT | SAMAN SAFARI · BETA 0.4</title>
+<style>
+:root{--bg:#090b0e;--panel:#11151a;--panel2:#171d24;--line:#2a313a;--gold:#c9a45c;--gold2:#ead39c;--txt:#f3f4f6;--muted:#9aa3ad;--green:#72c49a;--red:#e58d83;--blue:#8bb7dc;--r:18px;--shadow:0 14px 36px rgba(0,0,0,.28)}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% -15%,rgba(201,164,92,.13),transparent 36%),var(--bg);color:var(--txt);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:var(--gold2)}.wrap{max-width:1180px;margin:auto;padding:18px 16px 44px}.top{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 2px 22px}.brand{display:flex;align-items:center;gap:12px}.mark{width:52px;height:52px;border:1px solid var(--gold);border-radius:15px;display:grid;place-items:center;color:var(--gold2);font-weight:900;font-size:20px;letter-spacing:-2px;background:linear-gradient(145deg,#20252b,#070809);box-shadow:inset 0 0 18px #c9a45c18}.brand h1{font-size:16px;letter-spacing:1.2px;margin:0}.brand p{font-size:11px;color:var(--muted);margin:2px 0 0;letter-spacing:1.1px}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--txt);padding:10px 13px;border-radius:12px;font-size:12px}.btn.primary{background:linear-gradient(135deg,#d5b675,#a47b37);border-color:#d5b675;color:#14110a;font-weight:800}.btn.ghost{background:transparent}.btn.danger{border-color:#633c3a;color:#f0b2aa}.hero{background:linear-gradient(120deg,#171c22,#101317 65%,#1d1a13);border:1px solid #3b3427;border-radius:24px;padding:22px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:1.7px;font-weight:bold}.hero h2{font-size:clamp(20px,3vw,29px);margin:6px 0}.hero p{margin:0;color:#b8c0c9;font-size:13px;max-width:700px}.hero-stat{border-right:1px solid #49402f;padding-right:22px;text-align:center;min-width:110px}.hero-stat strong{font-size:30px;color:var(--gold2);display:block;line-height:1.1}.hero-stat span{font-size:11px;color:var(--muted)}.notice{margin:16px 0;padding:12px 14px;border:1px solid #574a30;background:#211d15;border-radius:14px;color:#e5d6b5;font-size:12px}.notice b{color:var(--gold2)}.toolbar{display:grid;grid-template-columns:1fr 190px auto;gap:10px;margin:18px 0}.field{width:100%;background:#0e1216;border:1px solid var(--line);border-radius:12px;color:var(--txt);padding:12px 13px;outline:none;min-width:0}.field:focus{border-color:var(--gold)}.field::placeholder{color:#68727d}.layout{display:grid;grid-template-columns:310px 1fr;gap:16px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}.panel-head{padding:15px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px}.panel-head h3{font-size:14px;margin:0}.count{font-size:11px;color:var(--muted)}.car-list{padding:8px;max-height:680px;overflow:auto}.car-item{display:flex;align-items:center;gap:11px;width:100%;text-align:right;padding:12px;border:1px solid transparent;border-radius:13px;background:transparent;color:var(--txt);margin:2px 0}.car-item:hover{background:#171d23}.car-item.active{background:#211e17;border-color:#76603a}.car-icon{width:38px;height:38px;flex:none;border-radius:11px;display:grid;place-items:center;background:#20252b;color:var(--gold2);font-size:11px;font-weight:bold}.car-meta{min-width:0;flex:1}.car-meta strong{display:block;font-size:13px}.car-meta small{color:var(--muted);font-size:10px}.tag{font-size:10px;border:1px solid #665536;color:#dfc58f;border-radius:30px;padding:3px 7px;white-space:nowrap}.detail{min-height:500px}.empty{padding:50px 24px;text-align:center;color:var(--muted)}.empty .big{font-size:42px;color:var(--gold);margin-bottom:8px}.detail-head{padding:20px;border-bottom:1px solid var(--line);background:linear-gradient(120deg,#171c22,#11151a)}.detail-title{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}.detail-title h2{font-size:21px;margin:2px 0 4px}.detail-title p{margin:0;color:var(--muted);font-size:12px}.status{display:inline-flex;align-items:center;gap:6px;border:1px solid #675637;background:#272216;color:#e8d3a5;border-radius:30px;padding:5px 9px;font-size:10px;white-space:nowrap}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}.status.ok{border-color:#315f48;background:#14251c;color:#a8e2c1}.status.ok:before{background:var(--green)}.facts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.fact{background:#0e1216;border:1px solid #2a313a;border-radius:10px;padding:7px 10px;font-size:11px;color:#c1c8d0}.fact b{color:var(--gold2);font-weight:600}.tabs{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--line);overflow:auto}.tab{border:1px solid transparent;border-radius:10px;background:transparent;color:var(--muted);padding:9px 12px;white-space:nowrap;font-size:12px}.tab.active{background:#272216;border-color:#685536;color:var(--gold2)}.tab-content{padding:18px}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px}.section-title h3{font-size:15px;margin:0}.section-title span{font-size:10px;color:var(--muted)}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.info-card{background:#0d1115;border:1px solid var(--line);border-radius:14px;padding:14px}.info-card h4{margin:0 0 8px;font-size:12px;color:var(--gold2)}.info-card p{margin:0;color:#bac2cb;font-size:12px}.muted{color:var(--muted)}.warning{border-right:3px solid var(--gold);background:#211d15;padding:12px 13px;border-radius:10px;color:#e5d6b5;font-size:12px;margin:12px 0}.list{padding:0 18px 0 0;margin:8px 0}.list li{margin:7px 0;color:#c1c8d0;font-size:12px}.record-row{padding:13px;border:1px solid var(--line);border-radius:13px;margin:9px 0;background:#0d1115}.record-row .rowtop{display:flex;justify-content:space-between;gap:8px;align-items:center}.record-row strong{font-size:12px}.record-row p{margin:6px 0 0;font-size:12px;color:var(--muted)}.check-group{margin:14px 0}.check-group h4{font-size:12px;color:var(--gold2);margin:0 0 7px}.check{display:flex;gap:10px;align-items:flex-start;padding:11px 10px;border-bottom:1px solid #252c33;font-size:12px;color:#d0d5db}.check input{accent-color:var(--gold);margin-top:5px;width:17px;height:17px;flex:none}.check small{display:block;color:var(--muted);font-size:10px}.check.done span{text-decoration:line-through;color:#84908a}.notes{margin-top:14px;min-height:90px;resize:vertical}.footer{color:#6f7882;text-align:center;font-size:10px;margin:22px 0 0}.modal-back{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:16px;z-index:10}.modal-back.show{display:flex}.modal{width:min(680px,100%);max-height:90vh;overflow:auto;background:#12171d;border:1px solid #49402f;border-radius:20px;box-shadow:0 25px 80px #000b}.modal-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line)}.modal-head h3{margin:0;font-size:15px}.modal-body{padding:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-field label{display:block;font-size:11px;color:#bdc5ce;margin:0 0 6px}.form-field.full{grid-column:1/-1}.form-field textarea{min-height:74px;resize:vertical}.form-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.help{font-size:10px;color:var(--muted);margin-top:5px}.source-item{font-size:11px;padding:10px;background:#0c1014;border:1px solid var(--line);border-radius:10px;margin:7px 0;overflow-wrap:anywhere}.source-item a{display:block;margin-top:4px}.hidden{display:none!important}.mobile-only{display:none}
+@media(max-width:800px){.wrap{padding:12px 11px 32px}.top{align-items:flex-start}.top-actions .btn{padding:8px 10px}.hero{grid-template-columns:1fr;padding:18px}.hero-stat{border-right:0;border-top:1px solid #49402f;padding:12px 0 0;text-align:right;display:flex;align-items:center;gap:10px}.hero-stat strong{font-size:24px}.toolbar{grid-template-columns:1fr 125px}.toolbar .btn{grid-column:1/-1}.layout{grid-template-columns:1fr}.car-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:260px}.car-item{padding:9px}.car-item .tag{display:none}.detail{min-height:420px}.grid2{grid-template-columns:1fr}.detail-title h2{font-size:18px}.tabs{padding:10px}.tab-content{padding:14px}.mobile-only{display:inline}}
+@media(max-width:420px){.brand h1{font-size:13px}.brand p{font-size:9px}.mark{width:45px;height:45px}.top-actions{max-width:140px}.top-actions .btn{font-size:10px}.toolbar{grid-template-columns:1fr}.car-list{grid-template-columns:1fr 1fr}.car-item{gap:7px}.car-icon{width:32px;height:32px}.car-meta strong{font-size:11px}.car-meta small{font-size:9px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.detail-title{display:block}.detail-title .status{margin-top:10px}}
+
+/* Light theme override */
+body[data-theme="light"]{--bg:#f1f3f5;--panel:#ffffff;--panel2:#f5f6f7;--line:#d9dee4;--txt:#202832;--muted:#65717d;--shadow:0 10px 28px rgba(20,30,40,.08);background:radial-gradient(ellipse at 85% -15%,rgba(201,164,92,.12),transparent 36%),var(--bg);color:var(--txt)}
+body[data-theme="light"] .mark{background:linear-gradient(145deg,#fff,#eceff2)}
+body[data-theme="light"] .hero{background:linear-gradient(120deg,#fff,#f2f4f6 65%,#f8f3e9);border-color:#dfd4bd}
+body[data-theme="light"] .hero p,body[data-theme="light"] .detail-title p,body[data-theme="light"] .info-card p,body[data-theme="light"] .record-row p,body[data-theme="light"] .list li,body[data-theme="light"] .check{color:#4d5965}
+body[data-theme="light"] .notice,body[data-theme="light"] .warning{background:#fbf6e9;color:#67552f;border-color:#e5d6b5}
+body[data-theme="light"] .field{background:#fff;color:#202832;border-color:#d3d9df}
+body[data-theme="light"] .car-item:hover{background:#f1f3f5}
+body[data-theme="light"] .car-item.active{background:#fbf6e9;border-color:#c9a45c}
+body[data-theme="light"] .car-icon{background:#edf0f2;color:#8a682d}
+body[data-theme="light"] .detail-head{background:linear-gradient(120deg,#fff,#f5f6f7)}
+body[data-theme="light"] .fact{background:#f5f6f7;border-color:#d9dee4;color:#4d5965}
+body[data-theme="light"] .fact b,body[data-theme="light"] .info-card h4,body[data-theme="light"] .section-title h3,body[data-theme="light"] .check-group h4{color:#86652d}
+body[data-theme="light"] .info-card,body[data-theme="light"] .record-row,body[data-theme="light"] .source-item{background:#f8f9fa;border-color:#dce1e6}
+body[data-theme="light"] .tab.active{background:#fbf6e9;border-color:#d9c79e;color:#765820}
+body[data-theme="light"] .status{background:#fbf6e9;color:#765820}
+body[data-theme="light"] .status.ok{background:#eaf6ef;color:#286342}
+body[data-theme="light"] .modal{background:#fff;border-color:#d8c9a9}
+body[data-theme="light"] .form-field label{color:#4d5965}
+body[data-theme="light"] .check{border-color:#e4e8ec}
+body[data-theme="light"] .car-list{background:#fff}
+body[data-theme="light"] .btn{background:#f5f6f7;color:#26313b;border-color:#d4dae0}
+body[data-theme="light"] .btn.primary{background:linear-gradient(135deg,#d5b675,#a47b37);color:#14110a;border-color:#c9a45c}
+body[data-theme="light"] .btn.ghost{background:transparent}
+body[data-theme="light"] .footer{color:#7c8791}
+
+
+/* Beta 0.3 - mobile refinements and per-vehicle gallery */
+.gallery-tools{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px;margin-top:14px}
+.gallery-card{background:var(--panel2);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-width:0}
+.gallery-card img{display:block;width:100%;height:142px;object-fit:cover;background:#0a0d10}
+.gallery-card .gallery-caption{padding:9px 10px;font-size:11px;overflow-wrap:anywhere}
+.gallery-card .gallery-meta{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:0 9px 9px}
+.gallery-empty{padding:22px;border:1px dashed var(--line);border-radius:14px;text-align:center;color:var(--muted);background:var(--panel2)}
+.gallery-cover{border:1px solid var(--line);border-radius:14px;padding:16px;background:linear-gradient(135deg,#1c2229,#11151a 65%,#302719);display:flex;align-items:center;gap:14px}
+.gallery-cover .cover-mark{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;background:#c9a45c20;color:var(--gold2);font-weight:900;font-size:18px;border:1px solid #8b7040}
+.gallery-cover strong{display:block;font-size:13px}.gallery-cover small{color:var(--muted);font-size:10px}
+body[data-theme="light"] .gallery-cover{background:linear-gradient(135deg,#fff,#f4f5f6 65%,#f8f2e7)}
+body[data-theme="light"] .gallery-card{background:#fff}
+body[data-theme="light"] .gallery-empty{background:#f8f9fa}
+@media(max-width:800px){
+ .top{flex-wrap:wrap}.top-actions{max-width:none;width:100%}.top-actions .btn{flex:1 1 auto;min-height:42px}
+ .toolbar{grid-template-columns:minmax(0,1fr) minmax(110px, .7fr)}
+ .form-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .form-field,.form-field input,.form-field select,.form-field textarea{min-width:0;width:100%}
+ .modal-back{align-items:flex-end;padding:0}.modal{width:100%;max-height:94dvh;border-radius:18px 18px 0 0;padding-bottom:env(safe-area-inset-bottom)}
+}
+@media(max-width:480px){
+ .wrap{padding:10px 9px 26px}.brand{min-width:0}.top-actions .btn{font-size:10px;padding:9px 7px}
+ .toolbar{grid-template-columns:1fr}.toolbar .btn{grid-column:auto}
+ .form-grid{grid-template-columns:minmax(0,1fr)}.form-field.full{grid-column:auto}
+ .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-card img{height:118px}
+ .detail-head{padding:15px}.tabs{gap:4px}.tab{padding:9px 10px}
+}
+
+
+/* Beta 0.4 - identity evidence and custom notes */
+.identity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:14px}
+.identity-panel{border:1px solid var(--line);background:var(--panel2);border-radius:15px;padding:14px;min-width:0}
+.identity-panel h4{margin:0 0 8px;color:var(--gold2);font-size:13px}
+.identity-panel p{margin:0 0 10px;color:var(--muted);font-size:11px}
+.identity-panel input[type=text],.identity-panel textarea,.custom-notes{width:100%;min-width:0;background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;outline:none}
+.identity-panel input[type=file]{display:block;width:100%;font-size:11px;margin:10px 0}
+.identity-photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(95px,1fr));gap:8px;margin-top:10px}
+.identity-photo{position:relative;min-width:0}
+.identity-photo img{width:100%;height:92px;object-fit:cover;border-radius:9px;border:1px solid var(--line);display:block}
+.identity-photo button{position:absolute;top:4px;left:4px;padding:3px 7px;font-size:10px;background:#301b1b;color:#fff;border:1px solid #744;border-radius:7px}
+.custom-notes{min-height:150px;resize:vertical;line-height:1.8}
+.note-status{font-size:10px;color:var(--green);margin-top:6px;min-height:18px}
+body[data-theme="light"] .identity-panel{background:#f8f9fa}
+body[data-theme="light"] .identity-panel input[type=text],body[data-theme="light"] .identity-panel textarea,body[data-theme="light"] .custom-notes{background:#fff;color:#26313b;border-color:#d4dae0}
+@media(max-width:560px){.identity-grid{grid-template-columns:minmax(0,1fr)}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="brand"><div class="mark">SS</div><div><h1>SS AUTO EXPERT</h1><p>SAMAN SAFARI · FIELD INSPECTION SYSTEM</p></div></div>
+  <div class="top-actions">
+    <button class="btn" id="themeBtn" type="button" aria-label="تغییر تم">☀️ تم روشن</button>
+    <button class="btn" id="exportBtn">خروجی پشتیبان</button>
+    <button class="btn" id="importBtn">ورود پشتیبان</button>
+    <button class="btn primary" id="addBtn">+ افزودن خودرو</button>
+    <input type="file" id="importFile" accept="application/json,.json" class="hidden">
+  </div>
+</header>
+<section class="hero">
+  <div><div class="eyebrow">INSPECT · VERIFY · DOCUMENT</div><h2>دستیار میدانی کارشناسی خودرو</h2><p>نسخه آزمایشی ۰.۴ — بانک اطلاعاتی قابل توسعه برای خودروهای داخلی، با تفکیک مدل، تیپ و سال. اطلاعات اختصاصی تأییدنشده عمداً خالی مانده‌اند.</p></div>
+  <div class="hero-stat"><strong id="carCount">۱۲</strong><span>خانواده خودروی نمونه</span></div>
+</section>
+<div class="notice"><b>یادآوری کارشناسی:</b> این نسخه ابزار ثبت و نظم‌دهی بازرسی است، نه مرجع قطعی محل شماره‌ها. تا زمانی که منبع معتبرِ منطبق با همان تیپ و سال ثبت نشده، محل VIN، شماره موتور و جزئیات اختصاصی با وضعیت «تأییدنشده» نمایش داده می‌شود.</div>
+<div class="toolbar">
+  <input class="field" id="search" placeholder="جست‌وجوی نام خودرو، سازنده یا تیپ…" autocomplete="off">
+  <select class="field" id="makeFilter"><option value="all">همه سازنده‌ها</option><option>ایران‌خودرو</option><option>سایپا</option><option>پارس‌خودرو</option><option>سایر</option></select>
+  <button class="btn ghost" id="resetSearch">پاک کردن جست‌وجو</button>
+</div>
+<div class="layout">
+  <aside class="panel">
+    <div class="panel-head"><h3>بانک خودروهای داخلی</h3><span class="count" id="listCount">۱۲ مورد</span></div>
+    <div class="car-list" id="carList"></div>
+  </aside>
+  <main class="panel detail" id="detail">
+    <div class="empty"><div class="big">⌕</div><strong>یک خودرو را انتخاب کن</strong><p>از فهرست سمت راست/بالا خودرو را انتخاب کن تا پرونده کارشناسی باز شود.</p></div>
+  </main>
+</div>
+<div class="footer">SS AUTO EXPERT · BETA 0.4 · اطلاعات محلی روی همین دستگاه ذخیره می‌شود</div>
+</div>
+
+<div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal"><div class="modal-head"><h3 id="modalTitle">افزودن خودرو به بانک</h3><button class="btn ghost" id="closeModal">بستن ×</button></div>
+ <div class="modal-body"><form id="carForm">
+  <input type="hidden" id="editId">
+  <div class="form-grid">
+   <div class="form-field"><label for="fMake">سازنده</label><select class="field" id="fMake"><option>ایران‌خودرو</option><option>سایپا</option><option>پارس‌خودرو</option><option>سایر</option></select></div>
+   <div class="form-field"><label for="fModel">نام مدل *</label><input class="field" id="fModel" required placeholder="مثلاً دنا پلاس"></div>
+   <div class="form-field"><label for="fTrim">تیپ / کد کلاس</label><input class="field" id="fTrim" placeholder="فقط در صورت اطلاع دقیق"></div>
+   <div class="form-field"><label for="fEngine">کد موتور / پیشرانه</label><input class="field" id="fEngine" placeholder="در صورت مستند بودن"></div>
+   <div class="form-field"><label for="fFrom">سال شروع (شمسی)</label><input class="field" id="fFrom" inputmode="numeric" placeholder="مثلاً ۱۴۰۰"></div>
+   <div class="form-field"><label for="fTo">سال پایان (شمسی)</label><input class="field" id="fTo" inputmode="numeric" placeholder="در صورت نیاز"></div>
+   <div class="form-field full"><label for="fVin">محل حک VIN — فقط با منبع دقیق</label><textarea class="field" id="fVin" placeholder="اگر منبع معتبر برای همین تیپ/سال نداری، خالی بگذار"></textarea></div>
+   <div class="form-field full"><label for="fEngineNo">محل شماره موتور — فقط با منبع دقیق</label><textarea class="field" id="fEngineNo" placeholder="اگر منبع معتبر برای همین تیپ/سال نداری، خالی بگذار"></textarea></div>
+   <div class="form-field"><label for="fSourceTitle">عنوان منبع</label><input class="field" id="fSourceTitle" placeholder="مثلاً دفترچه راهنمای مشتری"></div>
+   <div class="form-field"><label for="fSourceUrl">لینک منبع</label><input class="field" id="fSourceUrl" type="url" placeholder="https://…"></div>
+   <div class="form-field full"><label for="fSourceNote">مشخصات تطبیق منبع</label><textarea class="field" id="fSourceNote" placeholder="سال/تیپ/ویرایش سند و صفحه مربوط را بنویس"></textarea><div class="help">ثبت منبع به‌تنهایی تأیید خودکار ایجاد نمی‌کند؛ باید انطباق سند با خودرو و محتوای آن بررسی شود.</div></div>
+  </div>
+  <div class="form-actions"><button type="button" class="btn" id="cancelForm">انصراف</button><button class="btn primary" type="submit">ذخیره پرونده</button></div>
+ </form></div></div>
+</div>
+<script>
+(()=>{
+'use strict';
+const STORAGE='ss_auto_expert_beta_01';
+const THEME_KEY='ss_auto_expert_theme';
+function applyTheme(theme){const t=theme==='light'?'light':'dark';document.body.dataset.theme=t;const b=document.getElementById('themeBtn');if(b){b.textContent=t==='light'?'🌙 تم تیره':'☀️ تم روشن';b.setAttribute('aria-label',t==='light'?'تغییر به تم تیره':'تغییر به تم روشن');}try{localStorage.setItem(THEME_KEY,t)}catch(e){}}
+
+const baseCars=[
+ ['ikco-206','ایران‌خودرو','پژو ۲۰۶','خانواده ۲۰۶'],['ikco-207','ایران‌خودرو','پژو ۲۰۷','خانواده ۲۰۷'],['ikco-405','ایران‌خودرو','پژو ۴۰۵','خانواده ۴۰۵'],['ikco-pars','ایران‌خودرو','پژو پارس','خانواده پارس'],['ikco-samand','ایران‌خودرو','سمند','خانواده سمند'],['ikco-dena','ایران‌خودرو','دنا','خانواده دنا'],['ikco-rana','ایران‌خودرو','رانا','خانواده رانا'],['ikco-tara','ایران‌خودرو','تارا','خانواده تارا'],['saipa-pride','سایپا','پراید','خانواده X100'],['saipa-tiba','سایپا','تیبا','خانواده تیبا'],['saipa-quick','سایپا','کوییک','خانواده کوییک'],['saipa-shahin','سایپا','شاهین','خانواده شاهین']
+].map(([id,make,model,family])=>({id,make,model,family,trim:'نامشخص — نیازمند تفکیک',engine:'نامشخص',yearFrom:'',yearTo:'',vinLocation:'',engineNoLocation:'',sources:[],createdBy:'seed'}));
+const checklist=[
+ {group:'هویت و مدارک',items:[['تطبیق VIN روی خودرو با مدارک','شماره را بدون دستکاری، با نور و زاویه مناسب مشاهده و تطبیق کن.'],['تطبیق شماره موتور با مدارک','در صورت دسترسی ایمن و مجاز؛ محل دقیق باید از سند همان نسخه مشخص باشد.'],['تطبیق پلاک مشخصات و برچسب‌ها','وجود، خوانایی، آثار تعویض یا دستکاری را ثبت کن؛ محل هر برچسب را حدس نزن.'],['تطبیق تیپ، سال و مشخصات ظاهری','با کارت خودرو، کد کلاس و مستندات سازنده تطبیق بده.']]},
+ {group:'بدنه و سازه',items:[['بررسی فاصله و هم‌راستایی پنل‌ها','فاصله‌های چپ و راست و هم‌سطحی قطعات را مقایسه کن.'],['بررسی پیچ‌های گلگیر، درها و کاپوت','رد آچار، شکست رنگ یا جابه‌جایی را ثبت کن؛ به‌تنهایی حکم تعویض نیست.'],['بررسی جوش و درزگیر کارخانه','الگوی دو سمت و نقاط قرینه را مقایسه کن؛ معیار اختصاصی باید مستند باشد.'],['بررسی ستون‌ها، رکاب و سقف','موج، کشش، برش، جوش مجدد و اختلاف بافت را بررسی و عکس‌برداری کن.'],['بررسی کف صندوق و محفظه موتور','چین‌خوردگی، آثار ضربه، کشش و تعمیرات را ثبت کن.']]},
+ {group:'رنگ و پوشش',items:[['اندازه‌گیری ضخامت رنگ در شبکه منظم','دستگاه را کالیبره کن؛ چند نقطه از هر پنل و نقاط قرینه ثبت شود.'],['مقایسه پنل‌های قرینه','اختلاف ضخامت را با جنس زیرلایه و شرایط اندازه‌گیری تفسیر کن.'],['بررسی لبه‌ها و داخل چارچوب‌ها','پاشش، مرز رنگ، گرد رنگ و تفاوت بافت را بررسی کن.'],['بررسی شیشه‌ها و چراغ‌ها','تاریخ/کد تولید و تطابق چپ و راست را به‌عنوان قرینه، نه دلیل قطعی، ثبت کن.']]},
+ {group:'تجهیزات و آزمون',items:[['اسکن دیاگ و ثبت کدهای خطا','قبل از پاک کردن خطاها گزارش بگیر و وضعیت ماژول‌ها را ثبت کن.'],['بررسی چراغ هشدار و ایربگ','روشن و خاموش شدن چراغ‌ها و خطاهای SRS را مستند کن.'],['آزمون عملکرد تجهیزات کابین','شیشه‌بالابر، قفل‌ها، تهویه، نمایشگر و کلیدها را تست کن.']]}
+];
+let state=loadState(),selectedId=state.selectedId||state.cars[0]?.id||null,activeTab='body';
+function loadState(){try{const x=JSON.parse(localStorage.getItem(STORAGE));if(x&&Array.isArray(x.cars))return {...x,checks:x.checks||{},notes:x.notes||{},photos:x.photos||{},identity:x.identity||{},identityPhotos:x.identityPhotos||{},customNotes:x.customNotes||{},selectedId:x.selectedId||x.cars[0]?.id||null}}catch(e){}return {cars:baseCars,checks:{},notes:{},photos:{},identity:{},identityPhotos:{},customNotes:{},selectedId:baseCars[0].id};}
+function save(){try{localStorage.setItem(STORAGE,JSON.stringify(state));}catch(e){console.warn('Local storage unavailable; changes remain for this session.',e);}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function car(){return state.cars.find(c=>c.id===selectedId)}
+function initials(s){return (s||'SS').replace(/[آاأإء]/g,'ا').slice(0,2)}
+function renderList(){const q=document.getElementById('search').value.trim().toLowerCase(),m=document.getElementById('makeFilter').value;const arr=state.cars.filter(c=>(m==='all'||c.make===m)&&[c.make,c.model,c.trim,c.family,c.engine].join(' ').toLowerCase().includes(q));document.getElementById('carCount').textContent=state.cars.length;document.getElementById('listCount').textContent=arr.length+' مورد';document.getElementById('carList').innerHTML=arr.map(c=>`<button class="car-item ${c.id===selectedId?'active':''}" data-id="${esc(c.id)}"><span class="car-icon">${esc(initials(c.model))}</span><span class="car-meta"><strong>${esc(c.model)}</strong><small>${esc(c.make)} · ${esc(c.family||'پرونده شخصی')}</small></span><span class="tag">${c.vinLocation&&c.engineNoLocation?'دارای داده':'در انتظار تکمیل'}</span></button>`).join('')||'<div class="empty">موردی پیدا نشد.</div>';document.querySelectorAll('.car-item').forEach(b=>b.addEventListener('click',()=>{selectedId=b.dataset.id;state.selectedId=selectedId;activeTab='body';save();render();}));}
+function statusTag(text,ok=false){return `<span class="status ${ok?'ok':''}">${text}</span>`}
+function renderDetail(){const c=car(),el=document.getElementById('detail');if(!c){el.innerHTML='<div class="empty">خودرویی در بانک نیست. از «افزودن خودرو» استفاده کن.</div>';return;}
+const hasSpecific=!!(c.vinLocation&&c.engineNoLocation&&c.sources?.length);
+el.innerHTML=`<div class="detail-head"><div class="detail-title"><div><div class="eyebrow">VEHICLE DOSSIER / ${esc(c.make)}</div><h2>${esc(c.model)}</h2><p>${esc(c.family||'پرونده اختصاصی')} · ${esc(c.trim||'تیپ نامشخص')}</p></div>${statusTag(hasSpecific?'دارای داده ثبت‌شده':'اطلاعات اختصاصی تأییدنشده',hasSpecific)}</div><div class="facts"><span class="fact"><b>سال:</b> ${esc(c.yearFrom||'؟')}${c.yearTo?' تا '+esc(c.yearTo):''}</span><span class="fact"><b>تیپ:</b> ${esc(c.trim||'نامشخص')}</span><span class="fact"><b>موتور:</b> ${esc(c.engine||'نامشخص')}</span><span class="fact"><b>منابع:</b> ${c.sources?.length||0}</span></div></div>
+<div class="tabs"><button class="tab ${activeTab==='body'?'active':''}" data-tab="body">بدنه و رنگ</button><button class="tab ${activeTab==='id'?'active':''}" data-tab="id">اصالت و شماره‌ها</button><button class="tab ${activeTab==='identity'?'active':''}" data-tab="identity">شماره‌ها و توضیحات</button><button class="tab ${activeTab==='check'?'active':''}" data-tab="check">چک‌لیست میدانی</button><button class="tab ${activeTab==='gallery'?'active':''}" data-tab="gallery">گالری تصاویر</button><button class="tab ${activeTab==='notes'?'active':''}" data-tab="notes">توضیحات من</button><button class="tab ${activeTab==='sources'?'active':''}" data-tab="sources">منابع و ویرایش</button></div><div class="tab-content" id="tabContent">${tabContent(c)}</div>`;
+el.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{activeTab=b.dataset.tab;renderDetail();}));
+}
+function tabContent(c){if(activeTab==='body')return `<div class="section-title"><h3>راهنمای بررسی بدنه و رنگ</h3><span>روال عمومی — نه اطلاعات اختصاصی مدل</span></div><div class="warning">موارد زیر چک‌لیست عمومی بازرسی‌اند. محل جوش، درزگیر، پیچ یا نقطه حساس اختصاصی این خودرو تا زمان ثبت منبع همان تیپ/سال، در این پرونده ادعا نشده است.</div><div class="grid2"><div class="info-card"><h4>ضخامت‌سنجی رنگ</h4><ul class="list"><li>کالیبراسیون دستگاه و ثبت نوع زیرلایه</li><li>اندازه‌گیری چندنقطه‌ای روی هر پنل</li><li>مقایسه پنل‌های قرینه و ثبت عدد خام</li><li>تفسیر اختلاف با توجه به جنس فلز/آلومینیوم/پلاستیک</li></ul></div><div class="info-card"><h4>آثار تعمیر بدنه</h4><ul class="list"><li>موج سطح، بتونه و مرز پاشش</li><li>پیچ‌ها و آثار بازشدگی قطعات</li><li>فاصله پنل‌ها و هم‌سطحی</li><li>جوش، درزگیر و آثار کشش؛ با مقایسه نقاط قرینه</li></ul></div><div class="info-card"><h4>سازه و نقاط ایمنی</h4><ul class="list"><li>ستون‌ها، رکاب، سقف و سینی‌ها</li><li>کف صندوق و محفظه موتور</li><li>آثار برش، تعویض، جوش مجدد یا حرارت</li><li>ثبت عکس کلی و نزدیک با مقیاس</li></ul></div><div class="info-card"><h4>قطعات بازشدنی</h4><ul class="list"><li>کاپوت، درها، گلگیرهای پیچ‌شونده و درِ صندوق</li><li>تطبیق رنگ داخل لبه‌ها و پشت قطعه</li><li>بررسی تاریخ شیشه و چراغ به‌عنوان قرینه</li><li>نتیجه را با شواهد مستقل تأیید کن</li></ul></div></div><div class="warning">نکته: عدد ضخامت رنگ به‌تنهایی اثبات رنگ‌شدگی یا تعویض نیست؛ نوع دستگاه، جنس پنل، محل اندازه‌گیری و مرجع مقایسه باید ثبت شود.</div>`;
+if(activeTab==='id')return `<div class="section-title"><h3>اصالت و شناسه‌های خودرو</h3><span>تفکیک داده مستند از داده نامعلوم</span></div><div class="warning">هیچ محل VIN یا شماره موتور برای این مدل حدس زده نشده است. برای ثبت محل دقیق، سند باید با سال ساخت، تیپ/کد کلاس و پیشرانه همین خودرو تطبیق داده شود.</div><div class="record-row"><div class="rowtop"><strong>VIN / شماره شناسایی بدنه</strong>${statusTag(c.vinLocation?'ثبت شده — نیازمند بازبینی منبع':'محل نامشخص',false)}</div><p>${c.vinLocation?esc(c.vinLocation):'محل حک یا نصب در این پرونده ثبت نشده است.'}</p></div><div class="record-row"><div class="rowtop"><strong>شماره موتور</strong>${statusTag(c.engineNoLocation?'ثبت شده — نیازمند بازبینی منبع':'محل نامشخص',false)}</div><p>${c.engineNoLocation?esc(c.engineNoLocation):'محل شماره موتور در این پرونده ثبت نشده است.'}</p></div><div class="record-row"><div class="rowtop"><strong>پلاک مشخصات / لیبل‌ها</strong>${statusTag('نیازمند بررسی همان نسخه')}</div><p>محل، نوع پلاک و کدهای آن را فقط پس از مشاهده سند یا مستند سازنده برای همین تیپ و سال وارد کن.</p></div><div class="info-card"><h4>روال امن تطبیق</h4><ol class="list"><li>مدارک هویتی خودرو را با شناسه‌های قابل مشاهده تطبیق بده.</li><li>کدها را عیناً ثبت و از چند زاویه عکس بگیر.</li><li>آثار ظاهری مشکوک را بدون خراش، سنباده، حلال یا ابزار ساینده مستند کن.</li><li>در صورت ابهام یا احتمال دستکاری، نتیجه‌گیری را متوقف و به مرجع مجاز ارجاع بده.</li></ol></div><button class="btn primary" id="editVehicle">ثبت/ویرایش داده و منبع</button>`;
+if(activeTab==='identity'){
+ const ident=(state.identity&&state.identity[c.id])||{};
+ const evidence=(state.identityPhotos&&state.identityPhotos[c.id])||{};
+ const blocks=[
+  ['vinFactory','شماره شاسی فابریک','ثبت عدد/متن شماره شاسی فابریک و عکس محل حک اصلی'],
+  ['vinNonFactory','شماره شاسی غیرفابریک','ثبت شماره شاسی غیرفابریک یا برچسب/پلاک جایگزین و مستندات آن'],
+  ['engineFactory','شماره موتور فابریک','ثبت شماره موتور فابریک و عکس محل حک اصلی'],
+  ['engineNonFactory','شماره موتور غیرفابریک','ثبت شماره موتور غیرفابریک یا شناسه جایگزین و مستندات آن']
+ ];
+ return `<div class="section-title"><h3>ثبت و مستندسازی شماره‌های شناسایی</h3><span>مختص ${esc(c.model)}</span></div>
+ <div class="warning">این قسمت برای مستندسازی و مقایسه است. انتخاب «فابریک» یا «غیرفابریک» صرفاً عنوان ثبت کارشناس است و به‌تنهایی اصالت یا قانونی‌بودن شماره را تأیید نمی‌کند. از دستکاری، خراشیدن یا پاک‌سازی محل شماره خودداری کن و موارد مشکوک را به مرجع مجاز ارجاع بده.</div>
+ <div class="identity-grid">${blocks.map(([key,title,desc])=>`<section class="identity-panel"><h4>${title}</h4><p>${desc}</p><input type="text" data-identity-value="${key}" value="${esc(ident[key]||'')}" placeholder="شماره یا توضیح قابل ثبت"><label class="btn" style="display:inline-block;margin-top:9px">＋ بارگذاری عکس<input class="hidden" type="file" accept="image/*" multiple data-identity-upload="${key}"></label><div class="identity-photos">${(evidence[key]||[]).map(p=>`<div class="identity-photo"><img src="${p.data}" alt="${title}"><button type="button" data-delete-identity="${key}|${p.id}">حذف</button></div>`).join('')}</div></section>`).join('')}</div>
+ <div class="help" style="margin-top:12px">تصاویر هر دسته به‌صورت جداگانه ذخیره و در پشتیبان JSON نیز همراه پرونده منتقل می‌شوند.</div>`;
+}
+if(activeTab==='gallery'){
+ const photos=(state.photos&&state.photos[c.id])||[];
+ return `<div class="section-title"><h3>گالری اختصاصی ${esc(c.model)}</h3><span>${photos.length} تصویر ثبت‌شده</span></div>
+ <div class="gallery-cover"><div class="cover-mark">${esc(initials(c.model))}</div><div><strong>${esc(c.make)} · ${esc(c.model)}</strong><small>پرونده تصویری مستقل این خودرو</small></div></div>
+ <div class="warning">عکس‌های این بخش فقط به همین پرونده متصل می‌شوند. برای ثبت مستند کارشناسی، عکس کلی خودرو، چهار گوشه، هر پنل مشکوک و جزئیات آسیب را جداگانه اضافه کن. تصویر نمایشی بالا عکس واقعی خودرو نیست.</div>
+ <div class="gallery-tools"><button class="btn primary" id="addPhotosBtn">＋ افزودن عکس از گوشی</button><span class="help">حداکثر ۱۰ عکس برای هر بار انتخاب؛ تصاویر برای کاهش حجم به JPG فشرده می‌شوند.</span><input id="galleryFileInput" class="hidden" type="file" accept="image/*" multiple></div>
+ ${photos.length?`<div class="gallery-grid">${photos.map(p=>`<div class="gallery-card"><img src="${p.data}" alt="${esc(p.title||'عکس کارشناسی '+c.model)}" loading="lazy"><div class="gallery-caption">${esc(p.title||'عکس کارشناسی')}</div><div class="gallery-meta"><span class="muted">${new Date(p.createdAt||Date.now()).toLocaleDateString('fa-IR')}</span><button class="btn danger" data-delete-photo="${esc(p.id)}" type="button">حذف</button></div></div>`).join('')}</div>`:`<div class="gallery-empty" style="margin-top:14px"><div style="font-size:30px;margin-bottom:6px">📷</div>هنوز عکسی برای این خودرو ثبت نشده است.<br><small>از دکمه «افزودن عکس از گوشی» استفاده کن.</small></div>`}`;
+}
+if(activeTab==='check'){const saved=state.checks[c.id]||{};let n=0,total=0;checklist.forEach(g=>g.items.forEach((it,i)=>{total++;if(saved[g.group+'_'+i])n++;}));return `<div class="section-title"><h3>چک‌لیست بازرسی میدانی</h3><span>${n} از ${total} مورد علامت‌گذاری شده</span></div><div class="warning">این چک‌لیست عمومی است. تیک زدن فقط به معنی انجام بررسی است، نه تأیید سلامت قطعه.</div><div class="info-card"><div class="rowtop"><strong>پیشرفت بازرسی</strong><b style="color:var(--gold2)">${Math.round(n/total*100)}٪</b></div><div style="height:7px;background:#252c33;border-radius:20px;margin-top:10px;overflow:hidden"><div style="height:100%;width:${n/total*100}%;background:linear-gradient(90deg,#9d783c,#e5c77f);border-radius:20px"></div></div></div>${checklist.map(g=>`<div class="check-group"><h4>${esc(g.group)}</h4>${g.items.map((it,i)=>{let k=g.group+'_'+i;return `<label class="check ${saved[k]?'done':''}"><input type="checkbox" data-check="${esc(k)}" ${saved[k]?'checked':''}><span>${esc(it[0])}<small>${esc(it[1])}</small></span></label>`}).join('')}</div>`).join('')}<label class="form-field" style="display:block;margin-top:14px"><span style="font-size:11px;color:var(--gold2)">یادداشت این بازدید</span><textarea class="field notes" id="visitNotes" placeholder="عددهای ضخامت رنگ، ایرادها، شرایط بازدید، نام کارشناس…">${esc(state.notes[c.id]||'')}</textarea></label><div style="display:flex;justify-content:flex-end;margin-top:10px"><button class="btn" id="clearChecks">پاک کردن تیک‌های این خودرو</button></div>`;}
+if(activeTab==='notes'){
+ return `<div class="section-title"><h3>توضیحات اختصاصی کارشناس</h3><span>یادداشت مستقل این خودرو</span></div>
+ <div class="warning">هر توضیحی که لازم داری درباره وضعیت خودرو، نکات کارشناسی، سوابق اعلامی، ایرادهای مشاهده‌شده یا موارد نیازمند پیگیری اینجا بنویس. این یادداشت با یادداشت بازدید چک‌لیست جداست.</div>
+ <label class="form-field" style="display:block"><span style="font-size:11px;color:var(--gold2)">یادداشت و توضیحات تکمیلی</span><textarea class="custom-notes" id="customVehicleNotes" placeholder="توضیحات اختصاصی این خودرو را وارد کن...">${esc((state.customNotes&&state.customNotes[c.id])||'')}</textarea></label>
+ <div class="note-status" id="customNotesStatus">ذخیره خودکار در همین مرورگر فعال است.</div>`;
+}
+return `<div class="section-title"><h3>منابع و مدیریت پرونده</h3><span>ساختار قابل توسعه</span></div><div class="warning">برای ارتقای یک داده به «مستند»، منبع را با سال، تیپ و ویرایش دقیق بررسی کن. لینک اینترنتی یا دفترچه عمومی به‌تنهایی اثبات محل شماره در همه نسخه‌ها نیست.</div><div class="grid2"><div class="info-card"><h4>منابع ثبت‌شده برای این پرونده</h4>${c.sources?.length?c.sources.map(s=>`<div class="source-item"><b>${esc(s.title||'منبع بدون عنوان')}</b><div>${esc(s.note||'بدون توضیح تطبیق')}</div>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">باز کردن منبع ↗</a>`:''}</div>`).join(''):'<p>هنوز منبعی برای این خودرو ثبت نشده است.</p>'}</div><div class="info-card"><h4>ساختار داده</h4><p>هر پرونده شامل سازنده، مدل، تیپ، بازه سال، موتور، محل شناسه‌ها، منابع و چک‌لیست مستقل است. داده‌ها در حافظه همین مرورگر ذخیره می‌شوند و با فایل JSON قابل انتقال‌اند.</p><p style="margin-top:10px">وضعیت فعلی: <b style="color:var(--gold2)">آزمایشی / محلی</b></p></div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><button class="btn primary" id="editVehicle">ویرایش پرونده و افزودن منبع</button><button class="btn danger" id="deleteVehicle">حذف این پرونده</button></div><div class="info-card" style="margin-top:14px"><h4>درگاه‌های شروع برای دریافت سند</h4><p><a href="https://www.ikco.ir/" target="_blank" rel="noopener">وب‌سایت ایران‌خودرو ↗</a></p><p><a href="https://www.saipacorp.com/" target="_blank" rel="noopener">وب‌سایت گروه سایپا ↗</a></p><p><a href="https://www.saipayadak.org/" target="_blank" rel="noopener">سایپا یدک ↗</a></p><p><a href="https://azmoonkhodro.net/auto-manuals/" target="_blank" rel="noopener">فهرست کمکی دفترچه‌ها ↗</a> <span class="muted">(فقط برای یافتن سرنخ؛ نسخه و اصالت سند را از مرجع سازنده تطبیق بده.)</span></p></div><div class="info-card" style="margin-top:14px"><h4>ترتیب پیشنهادی اعتبارسنجی</h4><ol class="list"><li>دفترچه/سند فنی رسمی سازنده یا خدمات پس از فروش، با ویرایش و سال منطبق</li><li>بولتن فنی یا کاتالوگ قطعات رسمی همان کد کلاس/پیشرانه</li><li>بازرسی مستند خودروی نمونه با ثبت شماره شاسی و سال دقیق</li><li>منابع آموزشی ثانویه فقط برای سرنخ؛ نه تأیید نهایی</li></ol></div>`;
+}
+function render(){renderList();renderDetail();}
+function openModal(edit=false){const c=edit?car():null;document.getElementById('modalTitle').textContent=edit?'ویرایش پرونده خودرو':'افزودن خودرو به بانک';document.getElementById('editId').value=c?.id||'';document.getElementById('fMake').value=c?.make||'ایران‌خودرو';document.getElementById('fModel').value=c?.model||'';document.getElementById('fTrim').value=c?.trim==='نامشخص — نیازمند تفکیک'?'':(c?.trim||'');document.getElementById('fEngine').value=c?.engine==='نامشخص'?'':(c?.engine||'');document.getElementById('fFrom').value=c?.yearFrom||'';document.getElementById('fTo').value=c?.yearTo||'';document.getElementById('fVin').value=c?.vinLocation||'';document.getElementById('fEngineNo').value=c?.engineNoLocation||'';document.getElementById('fSourceTitle').value='';document.getElementById('fSourceUrl').value='';document.getElementById('fSourceNote').value='';document.getElementById('modalBack').classList.add('show');}
+function closeModal(){document.getElementById('modalBack').classList.remove('show')}
+document.getElementById('addBtn').addEventListener('click',()=>openModal(false));document.getElementById('closeModal').addEventListener('click',closeModal);document.getElementById('cancelForm').addEventListener('click',closeModal);document.getElementById('modalBack').addEventListener('click',e=>{if(e.target.id==='modalBack')closeModal()});
+document.getElementById('carForm').addEventListener('submit',e=>{e.preventDefault();const id=document.getElementById('editId').value||('custom-'+Date.now());let c=state.cars.find(x=>x.id===id);if(!c){c={id,sources:[]};state.cars.push(c);}c.make=document.getElementById('fMake').value;c.model=document.getElementById('fModel').value.trim();c.family=c.family||'پرونده شخصی';c.trim=document.getElementById('fTrim').value.trim()||'نامشخص — نیازمند تفکیک';c.engine=document.getElementById('fEngine').value.trim()||'نامشخص';c.yearFrom=document.getElementById('fFrom').value.trim();c.yearTo=document.getElementById('fTo').value.trim();c.vinLocation=document.getElementById('fVin').value.trim();c.engineNoLocation=document.getElementById('fEngineNo').value.trim();const st=document.getElementById('fSourceTitle').value.trim(),su=document.getElementById('fSourceUrl').value.trim(),sn=document.getElementById('fSourceNote').value.trim();if(st||su||sn)c.sources.push({title:st||'منبع بدون عنوان',url:su,note:sn,addedAt:new Date().toISOString()});selectedId=id;state.selectedId=id;activeTab='sources';save();closeModal();render();});
+document.getElementById('detail').addEventListener('click',e=>{
+ if(e.target.id==='addPhotosBtn'){document.getElementById('galleryFileInput')?.click();return;}
+ if(e.target.matches('[data-delete-identity]')){const parts=e.target.dataset.deleteIdentity.split('|'),key=parts[0],pid=parts[1];if(confirm('این تصویر از بخش شماره‌ها حذف شود؟')){state.identityPhotos=state.identityPhotos||{};state.identityPhotos[selectedId]=state.identityPhotos[selectedId]||{};state.identityPhotos[selectedId][key]=(state.identityPhotos[selectedId][key]||[]).filter(p=>p.id!==pid);save();renderDetail();}return;}
+ if(e.target.matches('[data-delete-photo]')){const pid=e.target.dataset.deletePhoto;if(confirm('این عکس از گالری همین خودرو حذف شود؟')){state.photos=state.photos||{};state.photos[selectedId]=(state.photos[selectedId]||[]).filter(p=>p.id!==pid);save();renderDetail();}return;}
+ if(e.target.id==='editVehicle')openModal(true);if(e.target.id==='deleteVehicle'&&confirm('این پرونده از بانک محلی حذف شود؟')){state.cars=state.cars.filter(c=>c.id!==selectedId);delete state.checks[selectedId];delete state.notes[selectedId];if(state.photos)delete state.photos[selectedId];if(state.identity)delete state.identity[selectedId];if(state.identityPhotos)delete state.identityPhotos[selectedId];if(state.customNotes)delete state.customNotes[selectedId];selectedId=state.cars[0]?.id||null;state.selectedId=selectedId;save();render();}if(e.target.id==='clearChecks'){if(confirm('همه تیک‌های این خودرو پاک شود؟')){state.checks[selectedId]={};save();renderDetail();}}});
+document.getElementById('detail').addEventListener('change',e=>{if(e.target.matches('[data-check]')){const c=car();state.checks[c.id]=state.checks[c.id]||{};state.checks[c.id][e.target.dataset.check]=e.target.checked;save();renderDetail();}});
+document.getElementById('detail').addEventListener('input',e=>{if(e.target.id==='visitNotes'){state.notes[selectedId]=e.target.value;save();}});
+document.getElementById('detail').addEventListener('input',e=>{
+ if(e.target.matches('[data-identity-value]')){state.identity=state.identity||{};state.identity[selectedId]=state.identity[selectedId]||{};state.identity[selectedId][e.target.dataset.identityValue]=e.target.value;save();}
+ if(e.target.id==='customVehicleNotes'){state.customNotes=state.customNotes||{};state.customNotes[selectedId]=e.target.value;save();const s=document.getElementById('customNotesStatus');if(s)s.textContent='ذخیره شد ✓';}
+});
+document.getElementById('detail').addEventListener('change',async e=>{
+ const key=e.target.dataset.identityUpload;if(!key)return;
+ const files=Array.from(e.target.files||[]).filter(f=>f.type.startsWith('image/')).slice(0,8);
+ if(!files.length)return;
+ state.identityPhotos=state.identityPhotos||{};state.identityPhotos[selectedId]=state.identityPhotos[selectedId]||{};state.identityPhotos[selectedId][key]=state.identityPhotos[selectedId][key]||[];
+ for(const file of files){
+  try{
+   const data=await compressPhoto(file);
+   state.identityPhotos[selectedId][key].push({id:'idphoto-'+Date.now()+'-'+Math.random().toString(36).slice(2,8),data,createdAt:new Date().toISOString()});
+  }catch(err){alert('بارگذاری این تصویر انجام نشد: '+file.name);}
+ }
+ save();renderDetail();e.target.value='';
+});
+
+document.getElementById('detail').addEventListener('change',async e=>{
+ if(e.target.id!=='galleryFileInput')return;
+ const files=Array.from(e.target.files||[]).filter(f=>f.type.startsWith('image/')).slice(0,10);
+ if(!files.length)return;
+ state.photos=state.photos||{};state.photos[selectedId]=state.photos[selectedId]||[];
+ for(const file of files){
+  try{
+   const data=await compressPhoto(file);
+   if((state.photos[selectedId]||[]).length>=60){alert('برای هر خودرو حداکثر ۶۰ عکس قابل نگهداری است.');break;}
+   state.photos[selectedId].push({id:'photo-'+Date.now()+'-'+Math.random().toString(36).slice(2,8),data,title:file.name.replace(/\.[^.]+$/,'').slice(0,80)||'عکس کارشناسی',createdAt:new Date().toISOString()});
+  }catch(err){alert('خواندن یکی از عکس‌ها ممکن نشد: '+file.name);}
+ }
+ save();renderDetail();e.target.value='';
+});
+function compressPhoto(file){return new Promise((resolve,reject)=>{
+ const reader=new FileReader();reader.onerror=()=>reject(new Error('read'));reader.onload=()=>{
+  const img=new Image();img.onerror=()=>reject(new Error('image'));img.onload=()=>{
+   const max=1440,scale=Math.min(1,max/Math.max(img.width,img.height));
+   const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));
+   const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0,canvas.width,canvas.height);
+   resolve(canvas.toDataURL('image/jpeg',.76));
+  };img.src=reader.result;
+ };reader.readAsDataURL(file);
+});}
+
+document.getElementById('search').addEventListener('input',renderList);document.getElementById('makeFilter').addEventListener('change',renderList);document.getElementById('resetSearch').addEventListener('click',()=>{document.getElementById('search').value='';document.getElementById('makeFilter').value='all';renderList();});
+document.getElementById('exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({app:'SS AUTO EXPERT',version:'0.4',exportedAt:new Date().toISOString(),...state},null,2)],{type:'application/json'});download(blob,'ss-auto-expert-backup.json');});
+document.getElementById('importBtn').addEventListener('click',()=>document.getElementById('importFile').click());document.getElementById('importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const obj=JSON.parse(await f.text());if(!Array.isArray(obj.cars))throw Error('ساختار فایل معتبر نیست');if(!confirm('اطلاعات فعلی با پشتیبان جایگزین شود؟ ابتدا از داده فعلی خروجی بگیر.'))return;state={cars:obj.cars,checks:obj.checks||{},notes:obj.notes||{},photos:obj.photos||{},identity:obj.identity||{},identityPhotos:obj.identityPhotos||{},customNotes:obj.customNotes||{},selectedId:obj.selectedId||obj.cars[0]?.id};selectedId=state.selectedId;save();render();alert('پشتیبان با موفقیت بارگذاری شد.');}catch(err){alert('فایل قابل خواندن نیست: '+err.message)}finally{e.target.value='';}});
+function download(blob,name){const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+document.getElementById('themeBtn').addEventListener('click',()=>applyTheme(document.body.dataset.theme==='light'?'dark':'light'));
+let savedTheme='dark';try{savedTheme=localStorage.getItem(THEME_KEY)||'dark'}catch(e){}applyTheme(savedTheme);
+render();
+})();
+</script>
+</body>
+</html>
